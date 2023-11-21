@@ -212,6 +212,11 @@ body {
     animation: rotate 7s linear infinite;
 }
 
+.moonSample {
+    width: 20em;
+    height: 20em;
+}
+
 .sunImg {
     background-image: url(../textures/2k_sun.jpg);
     border-radius: 50%;
@@ -232,4 +237,93 @@ body {
 
 @keyframes rotate {
     to { background-position: -200% 0;}
+}
+
+@media only screen and (max-width: 320px) {
+    .title {
+        top: 1em;
+        font-size: 1.5em;
+    }
+
+    .descTitle {
+        font-size: 1em;
+        top: 3em;
+    }
+
+    .desc {
+        top: 4em;
+        margin-top: 1em;
+        font-size: 10px;
+        left: -2.3em;
+        display: list-item;
+    }
+
+    .imgDesc {
+        font-size: 8px;
+    }
+
+    .planetSample {
+        width: auto;
+        height: 5em;
+    }
+
+    .sunImg {
+        width: 5em;
+        height: 5em;
+        box-shadow: 0px 0px 13px 4px #ffd001, 0px 0px 80px 15px #db2605;
+    }
+
+    .mercuryImg {
+        width: 5em;
+        height: 5em;
+        box-shadow: inset -25px 1px 20px -4px;
+    }
+
+    .venusImg {
+        width: 5em;
+        height: 5em;
+        box-shadow: inset -25px 1px 20px -4px;
+    }
+
+    .earthImg {
+        width: 5em;
+        height: 5em;
+        box-shadow: inset -25px 1px 20px -4px;
+    }
+
+    .moonImg {
+        width: 5em;
+        height: 5em;
+        box-shadow: inset -25px 1px 20px -4px;
+    }
+
+    .marsImg {
+        width: 5em;
+        height: 5em;
+        box-shadow: inset -25px 1px 20px -4px;
+    }
+
+    .jupiterImg {
+        width: 5em;
+        height: 5em;
+        box-shadow: inset -25px 1px 20px -4px;
+    }
+
+    .saturnImg {
+        left: -.5em;
+        width: 10em;
+        height: 5em;
+    }
+
+    .uranusImg {
+        width: 7em;
+        height: 7em;
+    }
+
+    .neptuneImg {
+        width: 5em;
+        height: 5em;
+        box-shadow: inset -25px 1px 20px -4px;
+    }
+
 }
