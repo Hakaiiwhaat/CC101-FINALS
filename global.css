@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "Fourche";
+    src: url(fonts/sf-fourche.regular.ttf);
+}
+
+@font-face {
+    font-family: "FourcheBold";
+    src: url(fonts/sf-fourche.bold.ttf);
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    background-color: black;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 20px;
+}
+
+.navbar {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 60em;
+    height: 8em;
+    top: 0;
+    margin-top: .2em;
+    margin: 0;
+    padding: 0;
+}
+
+#main-planets {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #fff2f2;
+    box-sizing: border-box;
+    margin-top: .5em;
+    border-width: 4px;
+    border-style: outset;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    height: 40px;
+    width: 140px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-family: FourcheBold;
+    /* background-color: rgba(255, 255, 255, 0); */
+}
+
+#main-planets:disabled {
+    pointer-events: none;
+}
+
+#main-planets:hover {
+    color: black;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+#main-planets:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+
+#main-explore {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #ffffff;
+    box-sizing: border-box;
+    border-width: 4px;
+    border-style: outset;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    margin-top: .5em;
+    height: 40px;
+    width: 140px;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    font-family: FourcheBold;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#main-explore:disabled {
+    pointer-events: none;
+}
+
+#main-explore:hover {
+    color: black;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+#main-explore:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+
+.navbar p{
+    position: relative;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Fourche;
+    top: 0;
+    font-size: 400%;
+    margin-top: .5em;
+    margin-bottom: 30px;
+    padding: 0px .7em 0px .7em;
+}
+
+@media only screen and (max-width: 600px) {
+    .sun {
+        width: 15em;
+        height: 15em;
+        top: 40vh;
+    }
+
+    .mercury, .venus, .earth, .mars, .jupiter, .saturn, 
+    .uranus, .neptune {}
+
+    .jupiter {
+        width: 8em;
+        height: 8em;
+    }
+
+    #main-planets {
+        position: absolute;
+        top: 10vh;
+        left: 40vw;
+    }
+
+    #main-explore {
+        position: absolute;
+        top: 10vh;
+        right: 40vw;
+    }
+
+    #loader {
+        top: -.5vh;
+        left: 1vw;
+        width: 15em;
+        height: 15em;
+    }
+
+
+    .mercury-desc, .venus-desc, .earth-desc, .mars-desc,
+    .jupiter-desc, .saturn-desc, .uranus-desc, .neptune-desc {
+        top: -14vh;
+        left: 20vw;
+    }
+
+    .sun-desc {
+        top: 75%;
+    }
+
+    .menuButton {
+        bottom: 5vh;
+        right: 8vw;
+    }
+  }
+

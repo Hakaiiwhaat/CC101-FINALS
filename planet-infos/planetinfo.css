@@ -1,0 +1,235 @@
+body {
+    background-image: url(../space.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.title {
+    position: relative;
+    font-family: FourcheBold;
+    font-size: 4em;
+    color: white;
+    margin-bottom: 0;
+    text-shadow: 4px 4px 3px rgba(255,255,255,0.6);
+}
+
+.all {
+    width: 95vw;
+    height: auto;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mercuryImg {
+    background-image: url(../textures/2k_mercury.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    width: 15em;
+    height: 15em;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    top: 3em;
+    box-shadow: inset -25px 1px 20px 4px;
+    animation: rotate 7s linear infinite;
+}
+
+.descTitle {
+    position: relative;
+    font-family: FourcheBold;
+    font-size: 2em;
+    top: 1.3em;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 4px 4px 3px rgba(255,255,255,0.6);
+}
+
+.desc {
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: Fourche;
+    padding-bottom: .5em;
+    top: 2.3em;
+    left: -1.5em;
+}
+
+.planetSample {
+    margin-top: 3em;
+}
+
+.imgDesc {
+    font-family: Fourche;
+    font-size: 15px;
+}
+
+.descTitle, .imgDesc, .desc {
+    color: white;
+}
+
+.venusImg {
+    background-image: url(../textures/2k_venus_surface.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    width: 15em;
+    height: 15em;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    top: 3em;
+    box-shadow: inset -25px 1px 20px 4px;
+    animation: rotate 7s linear infinite;
+}
+
+.earthImg {
+    background-image: url(../textures/2k_earth_daymap.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    width: 15em;
+    height: 15em;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    top: 3em;
+    box-shadow: inset -25px 1px 20px 4px;
+    animation: rotate 7s linear infinite;
+}
+
+.marsImg {
+    background-image: url(../textures/2k_mars.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    width: 15em;
+    height: 15em;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    top: 3em;
+    box-shadow: inset -25px 1px 20px 4px;
+    animation: rotate 7s linear infinite;
+}
+
+.jupiterImg {
+    background-image: url(../textures/2k_jupiter.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    width: 15em;
+    height: 15em;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    top: 3em;
+    box-shadow: inset -25px 1px 20px 4px;
+    animation: rotate 7s linear infinite;
+}
+
+.saturnImg {
+    background-image: url(../textures/saturn.png);
+    background-size: cover;
+    background-position: center;
+    width: 30em;
+    height: 15em;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    top: 3em;
+}
+
+.uranusImg {
+    background-image: url(../textures/Uranus.png);
+    background-size: cover;
+    background-position: center;
+    width: 15em;
+    height: 20em;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    top: 3em;
+    transform: rotate(360deg);
+}
+
+.neptuneImg {
+    background-image: url(../textures/2k_neptune.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    width: 15em;
+    height: 15em;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    top: 3em;
+    box-shadow: inset -25px 1px 20px 4px;
+    animation: rotate 7s linear infinite;
+}
+
+.moonImg {
+    background-image: url(../textures/2k_moon.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    width: 15em;
+    height: 15em;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    top: 3em;
+    box-shadow: inset -25px 1px 20px 4px;
+    animation: rotate 7s linear infinite;
+}
+
+.sunImg {
+    background-image: url(../textures/2k_sun.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    width: 15em;
+    height: 15em;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    top: 3.5em;
+    animation: rotate 7s linear infinite;
+    box-shadow: 0px 0px 13px 8px #ffd001, 0px 0px 80px 40px #db2605;
+}
+
+
+@keyframes rotate {
+    to { background-position: -200% 0;}
+}

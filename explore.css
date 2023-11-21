@@ -1,0 +1,40 @@
+.home {
+    background-image: url(../logos/logowhitefont.png);
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: transform 1s ease;
+    width: 15em;
+    height: 15em;
+    top: 19em;
+    /* top: 45.8%; */
+    left: 33em;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    will-change: transform;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.home:disabled {
+    pointer-events: none;
+}
+
+.home:hover {
+    box-shadow: rgba(255, 255, 255, 0.638) 0 0 30px;
+    background-image: url(../logos/logowhitebg.png);
+    transform: translateY(-2px);
+}
+
+.home:active {
+    box-shadow: none;
+    transform: translateY(0);
+}

@@ -1,0 +1,768 @@
+/* .indexlogo {
+    position: absolute;
+    width: 7em;
+    height: 7em;
+    top: 1em;
+    left: 47%;
+} */
+
+body {
+    background-image: url(space.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    opacity: 0.3s linear;
+}
+
+.sun {
+    width:35em;
+    height: 35em;
+    background-image: url(textures/2k_sun.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 25vh;
+    cursor: pointer;
+    transition: transform 1s ease;
+
+    box-shadow: 0px 0px 13px 8px #ffd001, 0px 0px 80px 40px #db2605;
+
+    animation: rotate 10s linear infinite;
+}
+
+.sundesc {
+    width: 35em;
+    height: 35em;
+    top: 25vh;
+    cursor: pointer;
+    transition: transform 1s ease;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.sun-desc{
+    position: absolute;
+    background-color: rgba(255, 250, 250, 0.81);
+    font-family: Fourche;
+    font-size: 1.2em;
+    border-radius: 15px/45px;
+    padding: 1em;
+    opacity: 0;
+    top: 90%;
+    left: 50%;
+    color: black;
+    visibility: hidden;
+    pointer-events: none;
+    width: 25em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(-50%, -50%);   
+    transition: opacity 0.5s ease;
+}
+
+.sundesc:hover + .sun-desc {
+    opacity: 1;
+    visibility: visible;
+    animation-play-state: paused;
+}
+
+.mercury {
+    width: 3em;
+    height: 3em;
+    background-image: url(textures/2k_mercury.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: -7em;
+
+    box-shadow: inset -9px -15px 14.5px 4px, -10px -7px 29.5px -7px #ccc;
+    
+    cursor: pointer;
+    transition: transform 1s ease;
+    animation: rotate 100s linear infinite, orbit-mercury 15s infinite ease-in-out;
+    
+    z-index: 1;
+}
+
+.mercury:hover {
+    transform: translateY(-50%) scale(2);
+}
+
+.mercury-desc {
+    position: absolute;
+    background-color: rgba(255, 250, 250, 0.81);
+    font-family: Fourche;
+    font-size: 1.2em;
+    border-radius: 15px/45px;
+    padding: 1em;
+    opacity: 0;
+    top: 2vh;
+    right: 20vw;
+    color: rgb(0, 0, 0);
+    visibility: hidden;
+    width: 25em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(-50%, -50%);   
+    transition: opacity 0.5s ease;
+}
+
+.mercury:hover + .mercury-desc{
+    opacity: 1;
+    visibility: visible;
+}
+
+.venus {
+    width: 5.8em;
+    height: 5.8em;
+    background-image: url(textures/2k_venus_surface.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: -18em;
+    cursor: pointer;
+    transition: transform 1s ease;
+    box-shadow: inset -9px -15px 14.5px 4px, -10px -7px 29.5px -7px #e39e1c;
+    
+    animation: rotate 80s linear infinite, orbit-venus 25s infinite ease-in-out;
+    
+    z-index: 2;
+}
+
+.venus:hover {
+    transform: translateY(-50%) scale(1.4);
+}
+
+.venus-desc {
+    position: absolute;
+    background-color: rgba(255, 250, 250, 0.81);
+    font-family: Fourche;
+    font-size: 1.2em;
+    border-radius: 15px/45px;
+    padding: 1em;
+    opacity: 0;
+    color: black;
+    width: 25em;
+    top: 2vh;
+    left: 45vw;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(-50%, -50%);   
+    transition: opacity 0.5s ease;
+}
+
+.venus:hover + .venus-desc{
+    opacity: 1;
+    visibility: visible;
+}
+
+.earth {
+    width: 6.2em;
+    height: 6.2em;
+    background-image: url(textures/2k_earth_daymap.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: -28em;
+    cursor: pointer;
+
+    transition: transform 1s ease;
+    box-shadow: inset -9px -15px 14.5px 4px, -10px -7px 29.5px -7px #212fec;
+
+    animation: rotate 60s linear infinite, orbit-earth 30s infinite ease-in-out;
+    
+    z-index: 3;
+}
+
+.earth:hover {
+    transform: translateY(-50%) scale(1.5);
+}
+
+.earth-desc {
+    position: absolute;
+    background-color: rgba(255, 250, 250, 0.81);
+    font-family: Fourche;
+    font-size: 1.2em;
+    border-radius: 15px/45px;
+    padding: 1em;
+    opacity: 0;
+    color: black;
+    width: 25em;
+    top: 2vh;
+    right: 20vw;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(-50%, -50%);   
+    transition: opacity 0.5s ease;
+}
+
+.earth:hover + .earth-desc{
+    opacity: 1;
+    visibility: visible;
+}
+
+.moon {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-image: url(textures/2k_moon.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    border-radius: 50%;
+    top: 46%;
+    left: -30.5em;
+    box-shadow: inset -9px -15px 14.5px -13px, 1.5px 0.5px 14.5px -1px gainsboro;
+    animation: rotate 30s linear infinite, orbit-moon 30s infinite ease-in-out;
+    z-index: 4;
+    cursor: pointer;
+    transition: transform 1s ease;
+}
+
+.moon:hover {
+    transform: scale(2);
+}
+
+
+.moon-desc {
+    position: absolute;
+    background-color: rgba(255, 250, 250, 0.81);
+    font-family: Fourche;
+    font-size: 1.2em;
+    border-radius: 15px/45px;
+    padding: 1em;
+    opacity: 0;
+    color: black;
+    width: 25em;
+    top: 2vh;
+    right: 20vw;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(-50%, -50%);   
+    transition: opacity 0.5s ease;
+}
+
+.moon:hover + .moon-desc {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mars {
+    width: 3.5em;
+    height: 3.5em;
+    background-image: url(textures/2k_mars.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: -35em;
+    cursor: pointer;
+    transition: transform 1s ease;
+    box-shadow: inset -9px -15px 14.5px 4px, -10px -7px 29.5px -7px #7a4507;
+    
+    animation: rotate 70s linear infinite, orbit-mars 45s infinite ease-in-out;
+    
+    z-index: 4;
+}
+
+.mars:hover {
+    transform: translateY(-50%) scale(1.7);
+}
+
+.mars-desc {
+    position: absolute;
+    background-color: rgba(255, 250, 250, 0.81);
+    font-family: Fourche;
+    font-size: 1.2em;
+    border-radius: 15px/45px;
+    padding: 1em;
+    opacity: 0;
+    color: black;
+    width: 25em;
+    top: 2vh;
+    left: 45vw;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(-50%, -50%);   
+    transition: opacity 0.5s ease;
+}
+
+.mars:hover + .mars-desc{
+    opacity: 1;
+    visibility: visible;
+}
+
+.jupiter {
+    width: 10em;
+    height: 10em;
+    background-image: url(textures/2k_jupiter.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: -48em;
+    cursor: pointer;
+    transition: transform 1s ease;
+    box-shadow: inset -9px -15px 14.5px 4px, -10px -7px 29.5px -7px #ebf3f6;
+
+    animation: rotate 5s linear infinite, orbit-jupiter 70s infinite ease-in-out;
+    
+    z-index: 5;
+}
+
+.jupiter:hover {
+    transform: translateY(-50%) scale(1.4);
+}
+
+.jupiter-desc {
+    position: absolute;
+    background-color: rgba(255, 250, 250, 0.81);
+    font-family: Fourche;
+    font-size: 1.2em;
+    border-radius: 15px/45px;
+    padding: 1em;
+    opacity: 0;
+    color: black;
+    width: 25em;
+    top: 2vh;
+    right: 20vw;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(-50%, -50%);   
+    transition: opacity 0.5s ease;
+}
+
+.jupiter:hover + .jupiter-desc{
+    opacity: 1;
+    visibility: visible;
+}
+
+.saturn {
+    width: 23em;
+    height: 13em;
+    background-image: url(textures/saturn.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left:-73em;
+    cursor: pointer;
+    transition: transform 1s ease;
+    transform: translateY(-50%);
+    animation: rotate 120s linear infinite, orbit-saturn 100s infinite ease-in-out;
+    
+    z-index: 6;
+}
+
+.saturn:hover {
+    transform: translateY(-50%) scale(1.4);
+}
+
+.saturn-desc {
+    position: absolute;
+    background-color: rgba(255, 250, 250, 0.81);
+    font-family: Fourche;
+    font-size: 1.2em;
+    border-radius: 15px/45px;
+    padding: 1em;
+    opacity: 0;
+    color: black;
+    width: 25em;
+    top: 2vh;
+    left: 45vw;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(-50%, -50%);   
+    transition: opacity 0.5s ease;
+}
+
+.saturn:hover + .saturn-desc{
+    opacity: 1;
+    visibility: visible;
+}
+
+.saturn-shadow {
+    width: 6.5em;
+    height: 7em;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 7.5em;
+    top: 50%;
+    left: -73em;
+    transition: transform 1s ease;
+    box-shadow: -10px -7px 29.5px -7px #bdc4c7;
+    transform: translateY(-50%);
+    animation: orbit-saturn-shadow 100s infinite ease-in-out;
+    
+    z-index: 5;
+}
+
+.saturn:hover + .saturn-shadow {
+    transform: scale(1.8);
+}
+
+.uranus {
+    width: 8em;
+    height: 8em;
+    background-image: url(textures/2k_uranus.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: -90em;
+    cursor: pointer;
+    transition: transform 1s ease;
+    box-shadow: inset -9px -15px 14.5px 4px, -10px -7px 29.5px -7px #afdbf5;
+    
+
+    animation: rotate 30s linear infinite, orbit-uranus 120s infinite ease-in-out;
+    
+    z-index: 7;
+}
+
+.uranus:hover {
+    transform: translateY(-50%) scale(1.4);
+}
+
+.uranus-desc {
+    position: absolute;
+    background-color: rgba(255, 250, 250, 0.81);
+    font-family: Fourche;
+    font-size: 1.2em;
+    border-radius: 15px/45px;
+    padding: 1em;
+    opacity: 0;
+    color: black;
+    width: 25em;
+    top: 2vh;
+    right: 20vw;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(-50%, -50%);   
+    transition: opacity 0.5s ease;
+}
+
+.uranus:hover + .uranus-desc{
+    opacity: 1;
+    visibility: visible;
+}
+
+.neptune {
+    width: 7.5em;
+    height: 7.5em;
+    background-image: url(textures/2k_neptune.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: -110em;
+    cursor: pointer;
+    transition: transform 1s ease;
+    box-shadow: inset -9px -15px 14.5px 4px, -10px -7px 29.5px -7px #5b5ddf;
+    
+
+    animation: rotate 40s linear infinite, orbit-neptune 150s infinite ease-in-out;
+    
+    z-index: 8;
+}
+
+.neptune:hover {
+    transform: translateY(-50%) scale(1.3);
+}
+
+.neptune-desc {
+    position: absolute;
+    background-color: rgba(255, 250, 250, 0.81);
+    font-family: Fourche;
+    font-size: 1.2em;
+    border-radius: 15px/45px;
+    padding: 1em;
+    opacity: 0;
+    color: black;
+    width: 25em;
+    top: 2vh;
+    left: 45vw;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(-50%, -50%);   
+    transition: opacity 0.5s ease;
+}
+
+.neptune:hover + .neptune-desc{
+    opacity: 1;
+    visibility: visible;
+}
+
+.sun, .mercury, .venus, .earth, .mars, .jupiter, .uranus, .neptune{
+    border-radius: 50%;
+    background-repeat: repeat;
+    background-size: 200% 100%;
+
+}
+
+.mercury, .venus, .earth, .mars, .jupiter, .uranus, .neptune{
+    transform: translateY(-50%);
+}
+
+@keyframes rotate {
+    to { background-position: -200% 0;}
+}
+
+@keyframes orbit-mercury{
+    49% { z-index: 1;}
+    50% {
+        left: 39em;
+        z-index: -1;
+    }
+    75% {}
+    99% {z-index: -1;}
+    100% {
+        left: -7em;
+        z-index: 1;
+    }
+}
+
+@keyframes orbit-venus{
+    49% { z-index: 1;}
+    50% {
+        left: 45em;
+        z-index: -2;
+    }
+    75% {}
+    99% {z-index: -2;}
+    100% {
+        left: -18em;
+        z-index: 2;
+    }
+}
+
+@keyframes orbit-earth{
+    49% { z-index: 3;}
+    50% {
+        left: 53em;
+        z-index: -3;
+    }
+    99% {z-index: -3;}
+    100% {
+        left: -28em;
+        z-index: 3;
+    }
+}
+
+@keyframes orbit-moon{
+    49% { z-index: 4;}
+    50% {
+        left: 60em;
+        z-index: -4;
+    }
+    99% {z-index: -4;}
+    100% {
+        left: -30em;
+        z-index: 4;
+    }
+}
+
+
+@keyframes orbit-mars{
+    49% { z-index: 1;}
+    50% {
+        left: 63em;
+        z-index: -4;
+    }
+    75% {}
+    99% {z-index: -4;}
+    100% {
+        left: -34em;
+        z-index: 4;
+    }
+}
+
+@keyframes orbit-jupiter{
+    49% { z-index: 1;}
+    50% {
+        left: 65em;
+        z-index: -5;
+    }
+    75% {}
+    99% {z-index: -5;}
+    100% {
+        left: -48em;
+        z-index: 5;
+    }
+}
+
+@keyframes orbit-saturn{
+    49% { z-index: 1;}
+    50% {
+        left: 73em;
+        z-index: -6;
+    }
+    99% {z-index: -1;}
+    100% {
+        left: -73em;
+        z-index: 6;
+    }
+}
+
+@keyframes orbit-saturn-shadow{
+    49% { z-index: 1;}
+    50% {
+        left: 73em;
+        z-index: -6;
+    }
+    99% {z-index: -1;}
+    100% {
+        left: -73em;
+        z-index: 6;
+    }
+}
+
+@keyframes orbit-uranus{
+    49% { z-index: 1;}
+    50% {
+        left: 85em;
+        z-index: -7;
+    }
+    99% {z-index: -1;}
+    100% {
+        left: -90em;
+        z-index: 7;
+    }
+}
+
+@keyframes orbit-neptune{
+    49% { z-index: 1;}
+    50% {
+        left: 92em;
+        z-index: -8;
+    }
+    99% {z-index: -8;}
+    100% {
+        left: -110em;
+        z-index: 8;
+    }
+}
+
+.sun .planets:hover .stop{
+    animation-play-state: paused;
+}
+
+.sun:hover .stop{
+    animation-play-state: paused;
+}
+
+
+.menuButton {
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    bottom: 8vh;
+    right: 4vw;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    border: 0.125em solid #ffffff;
+    box-sizing: border-box;
+    border-width: 4px;
+    border-style: outset;
+}
+
+.bar {
+    width: 100%;
+    height: 0.5em;
+    background-color: white;
+    transition: 0.5s;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.menuButton:hover .bar {
+    background-color: rgb(0, 0, 0);
+}
+
+.menuButton:hover {
+    background-color: white;
+}
+
+
+.menuItems {
+    display: none;
+    position: absolute;
+    bottom: 12vh;
+    right: 7.4vw;
+    padding: 5px;
+    background-color: #fff;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    z-index: 1;
+    font-family: FourcheBold;
+}
+
+.menuItems,
+.menuItems:hover {
+    background-color: #fff;
+}
+
+.menu:hover {
+    color: #ffffff; 
+    background-color: black;
+}
+    
+.menuButton:hover + .menuItems,
+.menuItems:hover {
+    display: block;
+}
+
+.menuItem {
+    padding: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.menu {
+    text-decoration: none;
+    appearance: none;
+    user-select: none;
+    -webkit-user-select: none;
+    color: black;
+    padding: 5px;
+}
+

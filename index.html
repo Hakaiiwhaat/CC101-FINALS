@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="logos/logowhitebg.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="global.css">
+    
+    <title>Beyond Earth</title>
+
+    <style>
+        .loader {
+            position: absolute;
+            top: 2.3rem;
+            width: 30em;
+            height: 30em;
+            left: 2.7em;
+            background-image: url(logos/logoglowwhite.png);
+            background-position: center;
+            background-size: cover;
+            transition: opacity 1.5s linear;
+            z-index: 20;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- <iframe src="loader/loader.html" frameborder="0" class="loader"></iframe> -->
+
+    <div class="navbar">
+        <a href="infoWindow.html"><button type="button" id="main-planets">DETAILS</button></a>
+        <!-- <img class="indexlogo" src="logos/logowhitefont.png" alt=""> -->
+        <p>BEYOND EARTH</p>
+        <a href="explore.html"><button type="button" id="main-explore">EXPLORE</button></a>
+    </div>
+    
+    <div class="sun">
+        <div class="planets">
+            
+            <div class="planet mercury stop"></div>
+            <p class="mercury-desc desc">The smallest planet, Mercury, has a heavily cratered surface and extreme temperature variations due to its proximity to the Sun.</p>
+            
+            <div class="planet venus stop"></div>
+            <p class="venus-desc desc">Venus, similar in size to Earth, has a thick, toxic atmosphere and experiences a runaway greenhouse effect, making it the hottest planet.</p>
+            
+            <div class="planet earth stop"></div>
+            <p class="earth-desc desc">Earth, the only known planet with abundant liquid water and life, boasts diverse climates, landscapes, and a protective atmosphere.</p>
+            <div class="planet moon stop"></div>
+            <p class="moon-desc">Earth's only natural satellite is simply called "the Moon" because people didn't know other moons existed until Galileo Galilei discovered four moons orbiting Jupiter in 1610. In Latin, the Moon was called Luna, which is the main adjective for all things Moon-related: lunar.</p>
+            
+            <div class="planet mars stop"></div>
+            <p class="mars-desc desc">Mars, the "Red Planet," features a rusty surface, polar ice caps, and has been a focus of exploration for potential signs of past life.</p>
+            
+            <div class="planet jupiter stop"></div>
+            <p class="jupiter-desc desc">Jupiter, the largest planet, is a gas giant with a dynamic atmosphere, prominent bands, and a system of colorful storms, including the Great Red Spot.</p>
+            
+            <div class="planet saturn-shadow stop"></div>
+            <div class="planet saturn stop"></div>
+            <p class="saturn-desc desc">Saturn, famous for its stunning ring system, is a gas giant with a diverse collection of moons and a prominent hexagonal storm at its north pole.</p>
+            
+            <div class="planet uranus stop"></div>
+            <p class="uranus-desc desc">Uranus, an ice giant, is tilted on its side, and its atmosphere contains methane, giving it a bluish-green hue.</p>
+            
+            <div class="planet neptune stop"></div>
+            <p class="neptune-desc desc">Neptune, another ice giant, features a dynamic atmosphere with the fastest winds in the solar system and a series of dark storms, such as the Great Dark Spot.</p>
+            <div class="loader" id="loader"></div>
+        </div>
+        
+        <!-- <button type="reset" class="reset">Reanimate</button> -->
+    </div>
+
+    <div class="sundesc"></div>
+    <p class="sun-desc">The Sun, a luminous ball of hot, ionized gas, is the center of our solar system, providing heat and light essential for the sustenance of life on Earth.</p>
+
+    <div class="menu">
+        <button type="button" class="menuButton" id="menuButton">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+        <div class="menuItems">
+            <div class="menuItem"><a href="menuFiles/aboutUs.html" class="menu">ABOUT US</div></a>
+            <div class="menuItem"><a href="menuFiles/credits.html" class="menu">CREDITS</div></a>
+            <div class="menuItem"><a href="menuFiles/feedback.html" class="menu">FEEDBACK</div></a>
+        </div>
+    </div>
+
+    <script src="loader.js"></script>
+</body>
+</html>
