@@ -466,7 +466,6 @@ body {
 
     .navbar {
         visibility: hidden;
-        opacity: 0;
         pointer-events: none;
         cursor: none;
         z-index: -1;
@@ -546,10 +545,11 @@ body {
     }
 
     .home {
-        top: 87vh;
-        left: 50vw;
-        width: 10em;
-        height: 10em;
-        cursor: none;
+        visibility: visible;
+        bottom: 6vh;
+        left: 43vw;
+        width: 7em;
+        height: 7em;
+        pointer-events: visible;
     }
 }
