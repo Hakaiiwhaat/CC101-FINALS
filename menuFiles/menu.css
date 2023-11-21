@@ -135,8 +135,6 @@ body {
     position: absolute;
     left: 43vw;
     box-shadow: -1px 0px 5px 9px rgba(255, 255, 255, 0.678);
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 20%, rgba(127,127,159,1) 81%, rgba(255,255,255,1) 100%);
 }
 
 .desc {
@@ -200,4 +198,45 @@ body {
 .bandesc {
     top: 62vh;
     left: 350px;
+}
+
+.home {
+    background-image: url(../logos/logowhitebg.png);
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: transform 1s ease;
+    width: 7em;
+    height: 7em;
+    bottom: 5vh;
+    /* top: 45.8%; */
+    right: 3vw;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    will-change: transform;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+#home2:disabled {
+    pointer-events: none;
+}
+
+.home:hover {
+    box-shadow: rgba(255, 255, 255, 0.638) 0 0 30px;
+    background-image: url(../logos/logoblackbg.png);
+    transform: translateY(-2px);
+}
+
+#home2:active {
+    box-shadow: none;
+    transform: translateY(0);
 }
