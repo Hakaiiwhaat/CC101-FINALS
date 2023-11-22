@@ -12,6 +12,9 @@ body {
     background-image: url(../space.jpg);
     background-size: cover;
     background-repeat: repeat;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
 }
 
 .top {
@@ -205,10 +208,9 @@ body {
     border-radius: 50%;
     background-color: transparent;
     border: none;
-    position: absolute;
     background-size: cover;
     background-position: center;
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
@@ -239,4 +241,148 @@ body {
 #home2:active {
     box-shadow: none;
     transform: translateY(0);
+}
+
+/* CREDITS */
+
+.textures {
+    position: relative;
+    height: 20em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imageTitle {
+    font-family: FourcheBold;
+    font-size: 200%;
+    text-shadow: 4px 4px 3px rgba(255,255,255,0.6);
+    pointer-events: none;
+    color: white;
+    position: relative;
+    top: 5vh;
+}
+
+.up {
+    position: relative;
+    padding: 1em;
+    top: 5vh;
+    width: 10em;
+    height: 5em;
+    left: 20.5vw;
+    box-shadow: -1px 0px 5px 9px rgba(255, 255, 255, 0.678);
+}
+
+.down {
+    position: relative;
+    top: 18vh;
+    width: 10em;
+    height: 5em;
+    padding: 1em;
+    right: 25.5vw;
+    box-shadow: -1px 0px 5px 9px rgba(255, 255, 255, 0.678);
+}
+
+.textLink {
+    position: absolute;
+    color: white;
+    font-family: FourcheBold;
+    font-size: 100%;
+    padding: .5em;
+    background: linear-gradient(90deg, rgb(107, 107, 107) 11%, rgba(103,103,103,1) 48%, rgb(131, 127, 127) 89%);
+    text-decoration: none;
+    top: 41vh;
+    left: 47vw;
+}
+
+.imageSamples {
+    top: 7vh;
+    position: relative;
+    height: 40em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sampleTitle {
+    top: 20vh;
+}
+
+.up2 {
+    width: 10em;
+    height: 10em;
+    position: relative;
+    padding: 1em;
+    top: 20vh;
+    left: 20.5vw;
+    box-shadow: -1px 0px 5px 9px rgba(255, 255, 255, 0.678);
+}
+
+.down2 {
+    width: 10em;
+    height: 8em;
+    position: relative;
+    padding: 1em;
+    top: 38vh;
+    right: 26.5vw;
+    box-shadow: -1px 0px 5px 9px rgba(255, 255, 255, 0.678);
+
+}
+
+.secondLink {
+    top: 70vh;
+}
+
+/* FEEDBACK */
+
+.feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form {
+    width: 400px; /* Adjust the width as needed */
+    padding: 20px;
+    padding-top: 0;
+    border: 2px solid white;
+    background-color: rgba(58, 58, 58, 0.623);
+    border-radius: 10px;
+}
+
+p {
+    color: white;
+    font-family: Fourche;
+}
+
+.title {
+    font-family: FourcheBold;
+    text-align: center;
+    font-size: 200%;
+}
+
+.instruc {
+    margin-bottom: 2em;
+}
+
+.rateOptions {
+    padding-right: 1em;
+}
+
+.name {
+    display: inline-block;
+    margin-top: 2em;
+}
+
+.name, .thoughts, .rateOptions {
+    font-size: 14px;
+    font-family: Fourche;
+    color: white;
+}
+
+.submit {
+    margin-top: 1em;
+    font-family: Fourche;
 }
