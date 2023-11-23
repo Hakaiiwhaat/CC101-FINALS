@@ -399,7 +399,7 @@ body {
     to { background-position: -200% 0;}
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     #left-planets {
         visibility: hidden;
         pointer-events: none;
@@ -447,13 +447,17 @@ body {
         left: 9em;
     }
 
+    .neptuneInfo {
+        
+    }
+
     .home {
-        top: 87vh;
+        top: 84vh;
         left: 50vw;
         width: 10em;
         height: 10em;
     }
-}
+} */
 
 @media only screen and (max-width: 320px) {
     #left-planets {
@@ -553,8 +557,122 @@ body {
 
     .home {
         visibility: visible;
-        bottom: 6vh;
+        top: 84vh;
         left: 43vw;
+        width: 7em;
+        height: 7em;
+        pointer-events: visible;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    body {
+        overflow-y: hidden;
+    }
+
+    #left-planets {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        cursor: none;
+        z-index: -1;
+    }
+    #right-explore {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        cursor: none;
+        z-index: -1;
+    }
+
+    .navbar {
+        visibility: hidden;
+        pointer-events: none;
+        cursor: none;
+        z-index: -1;
+    }
+
+    .sunInfo {
+        width: 30em;
+        height: 80vh;
+        left: -26em;
+        cursor: none;
+        top: 4%;
+        animation: none;
+    }
+
+    .mercuryInfo {
+        width: 2.5em;
+        height: 2.5em;
+        left: 1em;
+        cursor: none;
+    }
+
+    .venusInfo {
+        width: 3.5em;
+        height: 3.5em;
+        top: 8.5%;
+        left: 4em;
+    }
+
+    .earthInfo {
+        top: 20%;
+        width: 4em;
+        height: 4em;
+        left: 7em;
+        cursor: none;
+    }
+
+    .moonInfo {
+        width: 2em;
+        height: 2em;
+        top: 17%;
+        left: 11em;
+        cursor: none;
+    }
+
+    .marsInfo {
+        width: 2.7em;
+        height: 2.7em;
+        left: 8.5em;
+        cursor: none;
+    }
+
+    .jupiterInfo {
+        width: 5em;
+        height: 5em;
+        left: 7em;
+        cursor: none;
+    }
+
+    .saturnInfo {
+        top: 59%;
+        width: 15em;
+        height: 7em;
+        left: 1.5em;
+        cursor: none;
+    }
+
+    .uranusInfo {
+        top: 73%;
+        width: 4em;
+        height: 4em;
+        left: 4em;
+        cursor: none;
+    }
+
+    .neptuneInfo {
+        width: 4em;
+        height: 4em;
+        left: 1em;
+        cursor: none;
+        top: 83%;
+    }
+
+    .home {
+        visibility: visible;
+        top: 80vh;
+        left: 45vw;
         width: 7em;
         height: 7em;
         pointer-events: visible;
