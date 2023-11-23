@@ -352,6 +352,7 @@ body {
     border-radius: 10px;
 }
 
+
 p {
     color: white;
     font-family: Fourche;
@@ -368,6 +369,9 @@ p {
 }
 
 .rateOptions {
+    font-size: 14px;
+    font-family: Fourche;
+    color: white;
     padding-right: 1em;
 }
 
@@ -376,8 +380,8 @@ p {
     margin-top: 2em;
 }
 
-.name, .thoughts, .rateOptions {
-    font-size: 14px;
+.name, .thoughts{
+    font-size: 16px;
     font-family: Fourche;
     color: white;
 }
@@ -406,6 +410,8 @@ p {
         right: 10vw;
         font-size: 1em;
     }
+
+    /* ABOUT */
 
     .aboutTitle {
         margin-top: 20px;
@@ -515,6 +521,8 @@ p {
         transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
     }
 
+    /* CREDITS */
+
     .imageTitle {
         top: 1vh;
     }
@@ -557,5 +565,15 @@ p {
 
     .secondLink {
         top: 335vh;
+    }
+
+    /* FEEDBACK */
+    .form {
+        width: 300px;
+    }
+
+    textarea {
+        max-width: 100%;
+        line-height: 1.5;
     }
 }
