@@ -3,6 +3,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
+    width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -11,6 +12,35 @@ body {
     overflow-y: hidden;
     opacity: 0.3s linear;
 }
+
+.navbar2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 60em;
+    height: 8em;
+    top: 0;
+    margin-top: .2em;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar2 p{
+    position: relative;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Fourche;
+    top: 0;
+    font-size: 400%;
+    margin-top: .5em;
+    margin-bottom: 30px;
+    padding: 0px .7em 0px .7em;
+}
+
 
 .home {
     background-image: url(logos/logowhitebg.png);
@@ -77,4 +107,155 @@ body {
     text-decoration: none;
     color: white;
     font-family: Fourche;
+}
+
+iframe {
+    width: 800px;
+    height: 600px;
+    top: 25vh;
+    border: 2px solid #ffffff;
+}
+
+#main-planets3 {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #fff2f2;
+    box-sizing: border-box;
+    margin-top: .5em;
+    border-width: 4px;
+    border-style: outset;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    height: 40px;
+    width: 140px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-family: FourcheBold;
+    /* background-color: rgba(255, 255, 255, 0); */
+}
+
+#main-planets3:disabled {
+    pointer-events: none;
+}
+
+#main-planets3:hover {
+    color: black;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+#main-planets3:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+
+#main-explore3 {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #ffffff;
+    box-sizing: border-box;
+    border-width: 4px;
+    border-style: outset;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    margin-top: .5em;
+    height: 40px;
+    width: 140px;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    font-family: FourcheBold;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#main-explore3:disabled {
+    pointer-events: none;
+}
+
+#main-explore3:hover {
+    color: black;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+#main-explore3:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+
+@media only screen and (max-width: 360px) {
+    .home {
+        width: 5em;
+        height: 5em;
+        bottom: 5vh;
+        right: 3vw;
+    }
+
+    .note {
+        top: 17vh;
+        margin: 0 auto;
+        left: 1vw;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .navbar2 p {
+        position: absolute;
+        display: inline-block;
+        top: 0vh;
+        font-size: 200%;
+    }
+
+    iframe {
+        top: 31vh;
+        transform: rotate(-90deg);
+        width: 500px;
+        height: 350px;
+        margin: 0 auto;
+        left: -20vw;
+    }
+
+    .credits {
+       align-items: center;
+        text-align: center;
+        font-size: 10px;
+        top: 39.2vh;
+        left: -2vw;
+    }
+
+    #home3 {
+        width: 4em;
+        height: 4em;
+        top: 8vh;
+        left: 44vw;
+        cursor: none;
+    }
+    #main-planets3 {
+        right: 145vw;
+        position: absolute;
+        top: 8vh;
+        height: 35px;
+        width: 120px;
+        font-size: 16px;
+    }
+
+    #main-explore3 {
+        right: 90vw;
+        position: absolute;
+        top: 8vh;
+        height: 35px;
+        width: 120px;
+        font-size: 16px;
+    }
 }

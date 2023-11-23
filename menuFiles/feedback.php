@@ -8,7 +8,7 @@
     
     <title>Feedback</title>
 </head>
-<body class="feedback">
+<body class="feedback" style="overflow-y: hidden;">
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" class="form" method="post">
 
     <p class="title">FEEDBACK</p>

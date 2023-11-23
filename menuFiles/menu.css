@@ -569,6 +569,9 @@ p {
 
     /* FEEDBACK */
     .form {
+        position: absolute;
+        display: inline-block;
+        top: 2vh;
         width: 300px;
     }
 
@@ -576,4 +579,5 @@ p {
         max-width: 100%;
         line-height: 1.5;
     }
+
 }
