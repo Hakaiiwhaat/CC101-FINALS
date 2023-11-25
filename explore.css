@@ -91,7 +91,8 @@ body {
     padding: 2px;
     top: 17vh;
     background: rgb(180,171,171);
-    background: linear-gradient(90deg, rgba(180,171,171,1) 11%, rgba(103,103,103,1) 48%, rgba(180,171,171,1) 89%);
+    background: linear-gradient(90deg, rgba(180,171,171,1) 11%, rgb(255, 255, 255) 48%, rgba(180,171,171,1) 89%);
+    text-decoration: none;
 }
 
 .play {
@@ -105,7 +106,8 @@ body {
     position: relative;
     top: 42vh;
     background: rgb(180,171,171);
-    background: linear-gradient(90deg, rgba(180,171,171,1) 11%, rgba(103,103,103,1) 48%, rgba(180,171,171,1) 89%);
+    background: linear-gradient(90deg, rgba(180,171,171,1) 11%, rgb(255, 255, 255) 48%, rgba(180,171,171,1) 89%);
+    text-decoration: none;
     padding: 2px;
 }
 
