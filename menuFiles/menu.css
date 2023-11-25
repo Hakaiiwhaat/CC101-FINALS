@@ -147,7 +147,7 @@ body {
     color: black;
     padding: 5px;
     background: rgb(180,171,171);
-    background: linear-gradient(90deg, rgba(180,171,171,1) 11%, rgba(103,103,103,1) 48%, rgba(180,171,171,1) 89%);
+    background: linear-gradient(90deg, rgba(180,171,171,1) 11%, rgb(255, 255, 255) 48%, rgba(180,171,171,1) 89%);
 }
 
 .louiedesc {
@@ -285,11 +285,12 @@ body {
 
 .textLink {
     position: absolute;
-    color: white;
+    color: black;
     font-family: FourcheBold;
     font-size: 100%;
     padding: .5em;
-    background: linear-gradient(90deg, rgb(107, 107, 107) 11%, rgba(103,103,103,1) 48%, rgb(131, 127, 127) 89%);
+    background: rgb(180,171,171);
+    background: linear-gradient(90deg, rgba(180,171,171,1) 11%, rgb(255, 255, 255) 48%, rgba(180,171,171,1) 89%);
     text-decoration: none;
     top: 41vh;
     left: 47vw;

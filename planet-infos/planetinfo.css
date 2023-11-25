@@ -55,6 +55,7 @@ body {
     justify-content: center;
     align-items: center;
     text-shadow: 4px 4px 3px rgba(255,255,255,0.6);
+    color: white;
 }
 
 .desc {
@@ -68,6 +69,7 @@ body {
     color: black;
     top: 2.3em;
     left: -1.5em;
+    padding: 5px;
     background: rgb(180,171,171);
     background: linear-gradient(90deg, rgba(180,171,171,1) 11%, rgb(255, 255, 255) 48%, rgba(180,171,171,1) 89%);
 }
@@ -79,10 +81,9 @@ body {
 .imgDesc {
     font-family: Fourche;
     font-size: 15px;
-}
-
-.descTitle, .imgDesc{
-    color: white;
+    background: rgb(180,171,171);
+    background: linear-gradient(90deg, rgba(180,171,171,1) 11%, rgb(255, 255, 255) 48%, rgba(180,171,171,1) 89%);
+    padding: 5px;
 }
 
 .venusImg {
