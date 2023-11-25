@@ -86,9 +86,12 @@ body {
 .note {
     font-family: Fourche;
     font-size: 16px;
-    color: white;
+    color: black;
     position: absolute;
+    padding: 2px;
     top: 17vh;
+    background: rgb(180,171,171);
+    background: linear-gradient(90deg, rgba(180,171,171,1) 11%, rgba(103,103,103,1) 48%, rgba(180,171,171,1) 89%);
 }
 
 .play {
@@ -96,16 +99,19 @@ body {
 }
 
 .credits {
-    color: white;
+    color: black;
     font-family: Fourche;
     font-size: 16px;
     position: relative;
     top: 42vh;
+    background: rgb(180,171,171);
+    background: linear-gradient(90deg, rgba(180,171,171,1) 11%, rgba(103,103,103,1) 48%, rgba(180,171,171,1) 89%);
+    padding: 2px;
 }
 
 .link {
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: Fourche;
 }
 

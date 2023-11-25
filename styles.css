@@ -11,7 +11,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
-    min-height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -721,7 +721,7 @@ body {
 .menuItems {
     display: none;
     position: absolute;
-    bottom: 12vh;
+    bottom: 10vh;
     right: 7.4vw;
     padding: 5px;
     background-color: #fff;
