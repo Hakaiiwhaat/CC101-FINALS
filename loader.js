@@ -18,7 +18,7 @@ function revealHomePage() {
   // After the transition, hide the overlay
   setTimeout(() => {
     overlay.style.display = "none";
-  }, 1000); // Adjust this timing to match your CSS transition duration
+  }, 150); // Adjust this timing to match your CSS transition duration
 
   // Activate animations for specific elements
   sun.classList.add("active");
