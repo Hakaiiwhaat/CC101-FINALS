@@ -28,11 +28,11 @@
     <label for="fname" class="name">Name:</label><br>
     <input type="text" name="fname"><br><br>
     <label for="thoughts" class="thoughts">Thoughts:</label><br>
-    <textarea name="thoughts" id="thoughts" cols="54" rows="10" style="resize: none;"></textarea>
+    <textarea name="thoughts" id="thoughts" cols="60" rows="10" style="resize: none;"></textarea>
     <input type="submit" name="submit" value="Submit" class="submit">
     </form>
     
-    <a href="../index.html" target="_top"><button type="button" class="home" id="home2"></button></a>
+    <a href="../home.html" target="_top"><button type="button" class="home" id="home2"></button></a>
 
 </body>
 </html>
