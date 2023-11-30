@@ -6,6 +6,7 @@
     <link rel="icon" href="logos/logowhitebg.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="global.css">
+    <script src="https://kit.fontawesome.com/ae60d6c6cb.js" crossorigin="anonymous"></script>
     
     <title>Beyond Earth</title>
 
@@ -23,16 +24,62 @@
             z-index: 20;
             pointer-events: none;
         }
+        .icon {
+            color: black;
+        }
     </style>
 </head>
 <body>
+    <nav class="sidebar">
+        <ul>
+            <a href="home.html"><li class="first">
+                <div class="home-icon">
+                <div class="roof">
+                    <div class="roof-edge"></div>
+                </div>
+                <div class="front"></div>
+                </div>
+            </li></a>
+            <a href="infoWindow.html"><li class="second">
+                <div class="details-icon">
+                <div class="paper"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                </div>
+            </li></a>
+            <a href="explore.html"><li class="third">
+                <div class="explore-icon">
+                <i class="fa-regular fa-compass fa-2x icon"></i>
+                </div>
+            </li></a>
+            <a href="menuFiles/aboutUs.html"><li class="fourth">
+                <div class="about-icon">
+                <div class="head">
+                    <div class="eyes"></div>
+                    <div class="beard"></div>
+                </div>
+                </div>
+            </li></a>
+            <a href="menuFiles/credits.html"><li class="fifth">
+                <div class="about-icon">
+                    <i class="fa-solid fa-copyright fa-2x icon"></i>
+                </div>
+            </li></a>
+            <a href="menuFiles/feedback.php"><li class="sixth">
+                <div class="feedback">
+                <div class="mail-base">
+                    <i class="fa-solid fa-comment fa-2x icon"></i>
+                </div>
+                </div>
+            </li></a>
+            </ul>
+        </nav>
+      
     <!-- <iframe src="loader/loader.html" frameborder="0" class="loader"></iframe> -->
 
     <div class="navbar">
-        <a href="infoWindow.html"><button type="button" id="main-planets">DETAILS</button></a>
-        <!-- <img class="indexlogo" src="logos/logowhitefont.png" alt=""> -->
         <p>BEYOND EARTH</p>
-        <a href="explore.html"><button type="button" id="main-explore">EXPLORE</button></a>
     </div>
     
     <div class="sun">
@@ -72,19 +119,6 @@
 
     <div class="sundesc"></div>
     <p class="sun-desc">The Sun, a luminous ball of hot, ionized gas, is the center of our solar system, providing heat and light essential for the sustenance of life on Earth.</p>
-
-    <div class="menu">
-        <button type="button" class="menuButton" id="menuButton">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </button>
-        <div class="menuItems">
-            <div class="menuItem"><a href="menuFiles/aboutUs.html" class="menu">ABOUT US</div></a>
-            <div class="menuItem"><a href="menuFiles/credits.html" class="menu">CREDITS</div></a>
-            <div class="menuItem"><a href="menuFiles/feedback.php" class="menu">FEEDBACK</div></a>
-        </div>
-    </div>
 
     <script src="loader.js"></script>
 </body>
