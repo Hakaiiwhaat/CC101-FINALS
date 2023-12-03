@@ -313,7 +313,9 @@ nav ul li div { position: relative; }
 }
 
 .form {
-    width: 450px; 
+    margin: 0 auto;
+    margin-top: 20vh;
+    width: 480px; 
     padding: 20px;
     padding-top: 0;
     border: 2px solid white;

@@ -10,54 +10,62 @@
     <title>Feedback</title>
 
     <style>
-        .icon {
-            color: black;
+        .icons {
+            width: 40px;
+            height: 40px;
+            border: 0;
         }
-        a {
-            text-decoration: none;
+
+        .fbBody {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
     </style>
 </head>
-<body class="feedback" style="overflow-y: hidden;">
-<nav class="sidebar" style="position: fixed;">
+<body class="fbBody">
+    <nav class="sidebar">
         <ul>
-            <a href="../home.html"><li class="first">
+            <a href="../home.html" target="_top"><li class="first">
                 <div class="home-icon">
-                <div class="roof">
-                    <div class="roof-edge"></div>
-                </div>
-                <div class="front"></div>
+                    <img src="../icons/home.png" alt="" class="icons">
+                    <!-- <div class="roof">
+                        <div class="roof-edge"></div>
+                    </div>
+                    <div class="front"></div> -->
                 </div>
             </li></a>
-            <a href="../infoWindow.html"><li class="second">
+            <a href="../infoWindow.html" target="_top"><li class="second">
                 <div class="details-icon">
-                <div class="paper"></div>
+                    <img src="../icons/info.png" alt="" class="icons">
+
+                <!-- <div class="paper"></div>
                 <div class="lines"></div>
                 <div class="lines"></div>
-                <div class="lines"></div>
+                <div class="lines"></div> -->
                 </div>
             </li></a>
-            <a href="../explore.html"><li class="third">
+            <a href="../explore.html" target="_top"><li class="third">
                 <div class="explore-icon">
-                <i class="fa-regular fa-compass fa-2x icon"></i>
+                <!-- <i class="fa-regular fa-compass fa-2x icon"></i> -->
+                    <img src="../icons/compass.png" alt="" class="icons">
                 </div>
             </li></a>
-            <a href="aboutUs.html"><li class="fourth">
+            <a href="../menuFiles/aboutUs.html" target="_top"><li class="fourth">
                 <div class="about-icon">
-                <div class="head">
-                    <div class="eyes"></div>
-                    <div class="beard"></div>
-                </div>
+                    <img src="../icons/aboutUs.png" alt="" class="icons">
                 </div>
             </li></a>
-            <a href="credits.html"><li class="fifth">
+            <a href="../menuFiles/credits.html" target="_top"><li class="fifth">
                 <div class="about-icon">
-                    <i class="fa-solid fa-copyright fa-2x icon"></i>
+                    <!-- <i class="fa-solid fa-copyright fa-2x icon"></i> -->
+                    <img src="../icons/copyright.png" alt="" class="icons">
                 </div>
             </li></a>
-            <a href="feedback.php"><li class="sixth" style="height: 83px;">
-                <div class="feedback" style="height: 83px;">
-                    <i class="fa-solid fa-comment fa-2x icon"></i>
+            <a href="../menuFiles/feedback.php" target="_top"><li class="sixth">
+                <div class="feedback" style="height: 95px;">
+                    <img src="../icons/feedback.png" alt="" class="icons">
+                    <!-- <i class="fa-solid fa-comment fa-2x icon"></i> -->
                 </div>
             </li></a>
             </ul>
@@ -82,7 +90,7 @@
     <label for="fname" class="name">Name:</label><br>
     <input type="text" name="fname"><br><br>
     <label for="thoughts" class="thoughts">Thoughts:</label><br>
-    <textarea name="thoughts" id="thoughts" cols="60" rows="10" style="resize: none;"></textarea>
+    <textarea name="thoughts" id="thoughts" cols="55" rows="10" style="resize: none;"></textarea>
     <input type="submit" name="submit" value="Submit" class="submit">
     </form>
     
