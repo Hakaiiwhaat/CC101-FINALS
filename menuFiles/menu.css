@@ -39,7 +39,7 @@ body {
     flex-direction: row;
     position: absolute;
     top: 22vh;
-    left: -2.3em;
+    left: -2.5em;
     background: transparent;
 }
 
@@ -315,7 +315,7 @@ nav ul li div { position: relative; }
 .form {
     margin: 0 auto;
     margin-top: 20vh;
-    width: 480px; 
+    width: 500px; 
     padding: 20px;
     padding-top: 0;
     border: 2px solid white;
