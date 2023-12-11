@@ -47,9 +47,9 @@ body {
     background-repeat: repeat;
     position: absolute;
     border: none;
+    cursor: pointer;
     top: 12%;
     left: -8em;
-    pointer-events: none; 
     animation: rotate 15s linear infinite;
     transition: transform 1s ease;
 
@@ -358,9 +358,9 @@ nav ul li > div {
 nav ul li div { position: relative; }
 
 
-/* @keyframes rotate {
+@keyframes rotate {
     to { background-position: -200% 0;}
-} */
+}
 
 /* @media only screen and (max-width: 600px) {
     #left-planets {
