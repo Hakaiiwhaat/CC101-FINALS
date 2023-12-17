@@ -99,31 +99,45 @@
 </body>
 </html>
 
-<?php 
-    include("db.php");
-    $msgThoughts = "Magbigay ka badi";
-    $msgRate = "Pipindut ka lang oh";
+<?php
+include("db.php");
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $name = $_POST['fname'];
-        $rate = $_POST['radioRate'];
-        $thoughts = $_POST['thoughts'];
+$msgThoughts = "Magbigay ka badi";
+$msgRate = "Pipindut ka lang oh";
+$msgThanks = "Salamatss";
 
-        if (empty($thoughts)) {
-            echo "<script type='text/javascript'>alert('$msgThoughts');</script>";
-        } elseif (empty($rate)) {
-            echo "<script type='text/javascript'>alert('$msgRate');</script>";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['fname'];
+    $rate = $_POST['radioRate'];
+    $thoughts = $_POST['thoughts'];
+
+    if (empty($thoughts)) {
+        echo "<script type='text/javascript'>alert('$msgThoughts');</script>";
+    } elseif (empty($rate)) {
+        echo "<script type='text/javascript'>alert('$msgRate');</script>";
+    } else {
+        // Check for duplicate entry before inserting into the database
+        $checkDuplicateSql = "SELECT * FROM feedback WHERE name = '$name' AND rating = '$rate' AND thoughts = '$thoughts'";
+        $result = mysqli_query($conn, $checkDuplicateSql);
+
+        if (mysqli_num_rows($result) > 0) {
+            // Duplicate entry detected, display an error message
+            echo "<script type='text/javascript'>alert('Duplicate entry detected!');</script>";
         } else {
+            // No duplicate entry, proceed with insertion
             $sql = "INSERT INTO feedback (name, rating, thoughts) VALUES ('$name', '$rate', '$thoughts')";
-    
+
             try {
                 mysqli_query($conn, $sql);
-                echo "Salamatss";
+                echo "<script type='text/javascript'>alert('$msgThanks');</script>";
+                header("Location: feedback.php");
+                exit();
             } catch (mysqli_sql_exception $e) {
                 echo "Failed: " . $e->getMessage();
             }
         }
     }
+}
 
-    mysqli_close($conn);
+mysqli_close($conn);
 ?>
