@@ -2,7 +2,7 @@
     $dbServer = "localhost";
     $dbUser = "root";
     $dbPass = "";
-    $dbName = "dbusers";
+    $dbName = "cc101";
 
     $conn = "";
 

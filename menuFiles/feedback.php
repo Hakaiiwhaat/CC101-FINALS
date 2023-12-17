@@ -101,6 +101,8 @@
 
 <?php 
     include("db.php");
+    $msgThoughts = "Magbigay ka badi";
+    $msgRate = "Pipindut ka lang oh";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $name = $_POST['fname'];
@@ -108,9 +110,9 @@
         $thoughts = $_POST['thoughts'];
 
         if (empty($thoughts)) {
-            echo "Magbigay ka badi";
+            echo "<script type='text/javascript'>alert('$msgThoughts');</script>";
         } elseif (empty($rate)) {
-            echo "Pipindut ka lang oh";
+            echo "<script type='text/javascript'>alert('$msgRate');</script>";
         } else {
             $sql = "INSERT INTO feedback (name, rating, thoughts) VALUES ('$name', '$rate', '$thoughts')";
     
